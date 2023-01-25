@@ -328,6 +328,11 @@ p {
   .navLogo {
     font-size: 1.25rem;
     width: 20rem;
+    margin-left: 0rem;
+
+    img {
+      margin-right: 0.25rem;
+    }
   }
 
   .markdownanswer {
