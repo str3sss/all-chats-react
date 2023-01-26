@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import buttonicon from '../src/img/button.svg';
 import loadingicon from '../src/img/loading.svg';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FetchAPI } from './utils/FetchAPI';
 import MessageList from './components/MessageList';
 
@@ -11,6 +11,11 @@ function App() {
   const [question, setQuestion] = useState('');
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current?.focus()
+  })
   
   const onChangeHandler = (e) => {
     e.preventDefault();
@@ -60,6 +65,7 @@ function App() {
                 tabIndex={1}
                 onBeforeInput={() => console.log('reset')}
                 value={question}
+                ref={inputRef}
                 autoFocus
                 onChange={onChangeHandler}
                 autoComplete="off"
