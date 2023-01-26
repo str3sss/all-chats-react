@@ -179,7 +179,7 @@ p {
   &:disabled {
     opacity: .9;
     cursor: not-allowed;
-    background: none;
+    
   }
 }
 
@@ -251,7 +251,7 @@ p {
     // font-weight: 500;
     font-size: large;
     white-space: pre-wrap !important;
-    word-break: break-all !important;
+    
   }
 
   a {
