@@ -255,7 +255,7 @@ p {
     // font-weight: 500;
     font-size: large;
     white-space: pre-wrap !important;
-    word-break: break-all !important;
+    // word-break: break-all !important;
   }
 
   a {
@@ -339,19 +339,19 @@ p {
     display: flex;
     width: inherit;
     white-space: pre-wrap !important;
-    word-wrap: break-all !important;
+    // ;
 
     p {
       width: 70vw;
       white-space: pre-wrap !important;
-      word-wrap: break-all !important;
+      // ;
     }
 
     code {
       // color: #15cb19;
       background-color: rgba(217, 217, 217, 0.5);
       white-space: pre-wrap !important;
-      word-wrap: break-all !important;
+      // ;
     }
   }
 
