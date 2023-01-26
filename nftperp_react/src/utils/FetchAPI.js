@@ -3,7 +3,7 @@ import { id } from "./getId"
 const api_url = 'https://matlepad.com/chatbot'
 
 export async function FetchAPI(question) {
-  let data = {user_id: id, question, network: "fuel"}
+  let data = {user_id: id, question, network: "nftperp"}
   try {
     const response = await fetch(api_url, {
       body: JSON.stringify(data),

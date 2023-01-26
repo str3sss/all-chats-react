@@ -1,11 +1,11 @@
 import { id } from "./getId"
 
-const api_url = 'http://65.109.173.32:1000/chatbot'
+const api_url = 'https://matlepad.com/chatbot'
 
 export async function FetchAPI(question) {
   let data = {user_id: id, question, network: "quai"}
   try {
-    const response = await fetch("http://65.109.173.32:1000/chatbot", {
+    const response = await fetch(api_url, {
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",
